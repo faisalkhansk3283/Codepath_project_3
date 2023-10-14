@@ -1,0 +1,119 @@
+/* Updated CSS to make the entire screen fixed and only stored values and displayed values scrollable */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+  max-height: 100vh; /* Set a maximum height for the app container */
+  overflow-y: auto; /* Enable scrolling for the entire app container */
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.header,
+.cat-image-panel,
+.displayed-cats,
+.stored-values {
+  width: 25%;
+  background: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100%; /* Allow these sections to take full height within the app container */
+  overflow-y: auto; /* Enable scrolling for these sections */
+}
+
+.header,
+.cat-image-panel {
+  width: 25%;
+}
+
+.category-buttons {
+  width: 50%;
+}
+
+.main-column {
+  width: 50%;
+}
+
+.cat-image-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e0e0e0;
+}
+
+.stored-values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.stored-values li {
+  margin-bottom: 5px;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.cat-container img {
+  max-width: 100%; /* Adjust the width as needed */
+  max-height: 40px; /* Adjust the height as needed */
+  object-fit: contain;
+}
+
+.next-button {
+  margin-top: 20px;
+}
+
+.selected-category-info {
+  display: flex;
+  align-items: center;
+}
+.displayed-cats img {
+  max-width: 100%; /* Adjust the width as needed */
+  max-height: 40px; /* Adjust the height as needed */
+  object-fit: contain;
+}
+
+.cat-image-panel img{
+  max-width: 100%; /* Adjust the width as needed */
+  max-height: 180px; /* Adjust the height as needed */
+  object-fit: contain;
+}
